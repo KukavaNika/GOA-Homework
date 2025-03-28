@@ -1,0 +1,101 @@
+<!--1)შექმენით საიტი საყვარელ სპორტზე 
+
+საიტზე უნდა იყოს თქვენს საყვარელ სპორტზე ინფორმაცია
+საიტზე ასევე უნდა იყოს სურათები სპორტზე,
+სურათებს უნდა ჰქონდეთ border-radius ისე რომ ლამაზი გამოვიდეს სურათი.
+
+დააიმპორტეთ თქვენთვის სასურველი ფონტები და გამოიყენეთ თქვენს საიტში 
+მთლიან საიტს უნდა ჰქონდეს ფონის ფერი,ასევე ტექსტსაც 
+მიეცით შესაბამისი ფერები რომ საიტი იყოს ლამაზი
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2) დაასრულეთ საკლასო დავალება ვისაც არ დაგისრულებიათ
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+3) შექმენით საიტი სადაც იქნება unordered list'ი, მისი მარკერები იყოს კვადრატები და position'ი შიგნით შეწეული
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+4) შექმენით საიტი სადაც იქნება ordered list'ი, მისი მარკერები იყოს რომაული რიცხვები და position'ი გარეთ გამოწეული
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+5)აუცილებლად გადახედეთ ჩანაწერს თავიდან-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favorite sport</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #0073e6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+        ul {  
+            list-style-type: square;
+            list-style-position: inside;
+        }
+        ol {
+            list-style-type: upper-roman;
+            list-style-position: outside;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>favorite sport and my job - bodybuilding</h1>
+        <p>Bodybuilding is the practice of progressive resistance exercise to build, control, and develop one's muscles via hypertrophy.[1] An individual who engages in this activity is referred to as a bodybuilder. </p>
+        <img src="https://logos-world.net/wp-content/uploads/2024/01/Olympia-Emblem.png" alt="mr olympia professional bodybuilding bigesst contest">
+        
+        <h2>rules of bodybuilding</h2>
+        <ul>
+            <h1>IFBB PRO Rules for professional unnatural bodybuilders</h1>
+            <li>8.5 Nominations to compete:
+                Except where otherwise noted, an athlete may not participate at an International
+                Competition without the prior approval of his or her National Federation. Athletes are
+                prohibited from directly contacting the Organizer for the purpose of obtaining participant
+                status. Nomination of athlete for participation in the International Competition must be
+                done by his/her National Federation, by sending the Final Entry Form with the names of
+                nominated athletes to the Organizing Committee of that competition, IFBB Head Office and IFBB Technical Committee</li>
+            <li>Extraordinary and/or Exceptional Circumstances:
+                Where proven extraordinary and/or exceptional circumstances warrant, the IFBB
+                may authorize the participation of individual athletes in competitions sanctioned or
+                recognized by the IFBB when, at or around the time of the competition, the athlete's
+                national federation is in conflict, dispute and/or debate not yet resolved by an IFBB decision with the same IFBB</li>
+            <li>9.1 Guarantee:
+                Organizers of International Competitions must guarantee unconditional entry to all
+                countries eligible to participate and to all athletes eligible to compete..</li>
+        </ul>
+        
+        <h2>most famous categories:</h2>
+        <ol>
+            <li>CLASSIC PHYSIC</li>
+            <li>MENS OPEN</li>
+            <li>MENS PHYSIC</li>
+        </ol>
+    </div>
+</body>
+</html>

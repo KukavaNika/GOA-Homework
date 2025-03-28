@@ -1,0 +1,131 @@
+<!--1)კომენტარის სახით ახსენით Inline და Block Level ელემენტები (მოიყვანეთ თითოზე 3 მაგალითი)
+
+2)კომენტარის სახით ახსენით Inline CSS / Internal CSS / External CSS
+
+3)შექმენით დიდი საიტი GOA-ს შესახებ, სადაც გამოიყენებთ ყველა განვლილ თეგს, გამოიყენებთ CSS ყველა ნასწავლ კუთვლნილებას (საიტი უნდა იყოს მაქსიმალურად დახვეწილი დიზაინით)
+
+4)შექმენით საიტი რომელიც იქნება თქვენი საყვარელი საჭმელების შესახებ, საიტზე თითოეული საჭმლის ინფორმაცია და სურათი უნდა იყოს div ბლოკებში ჩასმული, div ბლოკებს უნდა გაუკეთოთ შავი border სურვილისამებრ შეგიძლიათ ტექსტაც შეუცვალოთ ფერი და ზომა-->
+
+<!--1-->
+<!-- 
+Block Level ელემენტები:
+- ყოველთვის იწყება ახალ ხაზზე
+- იკავებს მთელ სიგანეს (თუ ზომა არ შეუცვალეთ)
+- გამოიყენება კონტენტის სტრუქტურიზაციისთვის
+
+მაგალითები:
+1) <div> - კონტენტის ბლოკის შესაქმნელად
+2) <p> - პარაგრაფისთვის
+3) <section> - გვერდის განყოფილების შესაქმნელად-->
+
+<!-- 
+Inline ელემენტები:
+- არ იწყება ახალ ხაზზე
+- იკავებს მხოლოდ იმ ზომას, რაც შიგნით არსებულ კონტენტს სჭირდება
+- ძირითადად გამოიყენება ტექსტის ან სხვა ელემენტების ფორმატირებისთვის
+
+მაგალითები:
+1) <span> - ტექსტის სტილიზაციისთვის
+2) <a> - ლინკების დასამატებლად
+3) <strong> - ტექსტის გასამუქებლად-->
+
+
+<!--2-->
+<!-- 
+Inline CSS:
+- სტილები უშუალოდ HTML ელემენტში `style` ატრიბუტის გამოყენებით იწერება.
+- გამოიყენება მცირე ცვლილებებისთვის, მაგრამ არ არის რეკომენდებული დიდი პროექტებისთვის.
+მაგ: <p style="color: red;">Hello</p>-->
+
+<!-- 
+Internal CSS:
+- სტილები იწერება <style> თეგში, რომელიც <head> ნაწილშია.
+- გამოიყენება მაშინ, როცა გვერდზე საჭიროა უნიკალური სტილები.
+მაგ:
+<style>
+    p { color: blue; font-size: 20px; }
+</style>-->
+
+<!-- 
+External CSS:
+- ცალკე CSS ფაილში ინახება და HTML დოკუმენტში <link> თეგით ერთვის.
+- საუკეთესო პრაქტიკაა დიდი და ორგანიზებული პროექტებისთვის.
+მაგ: 
+<link rel="stylesheet" href="styles.css">-->
+
+
+<!--3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOA - Goal-Oriented Academy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background-color: #09b32b;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+        nav {
+            margin: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #168e16;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            background: rgb(178, 178, 178);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #054b1a;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GOA - Goal-Oriented Academy</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+    <h2>About GOA</h2>
+    <p>GOA is an educational platform where students learn real-world skills.</p>
+</section>
+
+<section>
+    <h2>Our Courses</h2>
+    <ul>
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>Python Programming</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2025 GOA Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

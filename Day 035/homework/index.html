@@ -1,0 +1,68 @@
+<!--:hover
+განსაზღვრავს ელემენტს, როდესაც მღებრია მაუსი.
+მაგალითი: a:hover { color: red; }
+
+
+:active
+აქტიურ მდგომარეობაში არსებული ელემენტი (მაგ. როდესაც კლიკენთ ლინკზე).
+მაგალითი: a:active { color: blue; }
+
+:focus
+განსაზღვრავს ელემენტს, როცა ის აქტიურად ფოკუსირებული (მაგ. input ველი ან ბუტონი).
+მაგალითი: input:focus { border-color: green; }
+
+:first-child
+სელექტორად გამოიყენება პირველ შვილ ელემენტზე.
+მაგალითი: div:first-child { font-weight: bold; }
+
+:last-child
+სელექტორად გამოიყენება ბოლო შვილ ელემენტზე.
+მაგალითი: div:last-child { margin-bottom: 0; }
+
+:nth-child(n)
+სელექტორად გამოიყენება კონკრეტული ბავშვის ელემენტის არჩევისთვის, სადაც n არის ინდექსი (ნომერი).
+მაგალითი: li:nth-child(2) { background-color: yellow; }
+
+:nth-of-type(n)
+იგივეა, რაც :nth-child, მაგრამ მხოლოდ იმ ელემენტებს დაემთხვება, რომლებიც ტიპით არიან იგივე.
+მაგალითი: p:nth-of-type(3) { font-size: 20px; }
+
+:not(selector)
+გამოტოვებს მოცემულ selector-ის ელემენტებს.
+მაგალითი: div:not(.active) { display: none; }
+
+:before
+შედის მოცემულ ელემენტში კონტენტის წინ.
+მაგალითი: p:before { content: "Note: "; font-weight: bold; }
+
+:after
+შედის მოცემულ ელემენტში კონტენტის შემდეგ.
+მაგალითი: p:after { content: ";"; color: red; }-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>welcome to resturant</h1>
+    <p>we making best products.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 our resturant</p>
+  </footer>
+</body>
+</html>

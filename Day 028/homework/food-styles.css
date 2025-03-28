@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+.food {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    width: 250px;
+}
+
+.food img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pizza { color: yellow; }
+.burger { color: orange; }
+.sushi { color: pink; }
+.pasta { color: lightgreen; }
+.icecream { color: lightblue; }

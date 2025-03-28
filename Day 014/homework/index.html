@@ -1,0 +1,71 @@
+<!--1)შექმენით მარტივი რამოდენიმე გვერდიანი ონლაინ მაღაზიის საიტი:
+
+უნდა გქონდეთ ნავიგაციის მენიუ შექმენილი და დაჯგუფებული <nav> თეგში, რომელიც გადაგიყვანთ შემდეგ გვერდებზე:
+
+HOME - მთავარ გვერდზე უნდა გქონდეთ მოცემული მინიმუმ 10 პროდუქტი (პროდუქტის დასახელება, ფოტო, აღწერა, ფასი და "Buy Now" ღილაკი.
+ABOUT - უნდა გქონდეთ გვერდი სადაც გეწერებათ ინფორმაცია საიტის (თქვენი მაღაზიის) შესახებ.
+CONTACT - უნდა გქონდეთ მითითებული ის გზები, რომლითაც შეუძლიათ მომხმარებლებს დაგიკავშირდნენ. მაგ:(ნომერი, ემაილი, მისამართი...)
+
+
+2)შექმენით ერთ გვერდიანი საიტი სადაც გექნებათ მინიმუმ 3 სექცია (შესავალი, ინფორმაცია, კონტაქტი):
+უნდა გქონდეთ ნავიგაციის მენიუ რომელიც დაჭერის შემთხვევაში ჩამოგიყვანთ იმ კონკრეტულ სექციამდე... (გამოიყენეთ id)-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>online shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>suppliments shop</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>ჩვენი პროდუქტები</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTY6NwL0aCujiyqpo-yTK0GhpolUu70pnQw&s" alt="პროდუქტი 1">
+        <h3>bcca</h3>
+        <p>პროდუქტის აღწერა</p>
+        <p>ფასი: 30.00 ლარი</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71BFejouWCL.jpg" alt="პროდუქტი 2">
+        <h3>protein</h3>
+        <p>პროდუქტის აღწერა</p>
+        <p>ფასი: 40.00 ლარი</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="product">
+        <img src="https://www.xtr.gr/images/detailed/50/01-067-032-Creatine-Monohydrate-317g-On-web.jpg" alt="პროდუქტი 3">
+        <h3>creatine</h3>
+        <p>პროდუქტის აღწერა</p>
+        <p>ფასი: 50.00 ლარი</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+    <div class="ABOUT">
+        <h1>oso</h1>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ჩვენი მაღაზია. ყველა უფლება დაცულია.</p>
+  </footer>
+
+</body>
+</html>

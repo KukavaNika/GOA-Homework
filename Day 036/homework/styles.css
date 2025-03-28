@@ -1,0 +1,33 @@
+/* საერთო სტილები ცხრილისთვის */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  tbody tr:hover td {
+    color: #000;
+    font-weight: bold;
+  }
+  

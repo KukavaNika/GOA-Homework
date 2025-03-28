@@ -1,0 +1,45 @@
+<!--1)ახსენით რაში გვჭირდება page layout ანუ <header>,<main> და <footer> თეგები
+
+    2)შექმენით სიტი სადაც იქნება 5 განსხვავებული ვიდეო და 5 განსხვავაებული აუდიო,კომენტარებით ასენით რაში გვჭირდება controls, autoplay ,muted, loop ატრიბუტები.
+    
+    3)შექმენით საიტი სადაც იქნება ცხოველების სახელები ქვევით მათი ფოტოები და ფოტოს ქვემოთ აუდიო თეგის საშუალებით ჩასვით ამ ცხოველების ხმები.
+    
+    4)შექმენით საიტი სადაც ჩაამატებთ თქვენი 3 საყვარელი ანიმაციის ან ფილმის ვიდეოს (ტრეილერს) და გვერძე მიუწერეთ მოკლედ, რაზეა ფილმი ან ანიმაცია, ასევე დაამატეთ საყვარელიი მუსიკები საუდიო თეგით და გვერდზე მიუწერეთ მუსიკის სახელი.
+    
+    5)გადახედეთ ჩანაწერს აუცილებლად თავიდან-->
+
+
+<!--1-->
+<!--<header> – გვერდის ან სექციის სათაური (შეიცავს ლოგოს, ნავიგაციას, სათაურებს)-->
+<!--<main> – გვერდის მთავარი კონტენტი (მთავარი ინფორმაცია, სტატიები, პროდუქტები და ა.შ.)-->
+<!--<footer> – გვერდის ქვედა ნაწილი (კონტაქტი, საავტორო უფლებები, სოციალური ბმულები)-->    
+
+
+<!--2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video and audio</title>
+</head>
+<body>
+
+    <h2>videos</h2>
+
+    <video src="video1.mp4" controls></video> <!-- მართვის პანელით -->
+    <video src="video2.mp4" autoplay muted></video> <!-- ავტომატური გაშვება გათიშული ხმით -->
+    <video src="video3.mp4" loop controls></video> <!-- უსასრულოდ იმეორებს -->
+    <video src="video4.mp4" muted controls></video> <!-- ჩაწეული ხმით იწყებს -->
+    <video src="video5.mp4" autoplay loop muted></video> <!-- ავტომატურად და უსასრულოდ -->
+
+    <h2>audios</h2>
+
+    <audio src="audio1.mp3" controls></audio> <!-- მართვის პანელით -->
+    <audio src="audio2.mp3" autoplay></audio> <!-- ავტომატურად იწყებს -->
+    <audio src="audio3.mp3" loop controls></audio> <!-- უსასრულოდ იმეორებს -->
+    <audio src="audio4.mp3" muted controls></audio> <!-- ხმის გარეშე -->
+    <audio src="audio5.mp3" autoplay loop muted></audio> <!-- ავტომატურად და ჩუმად იმეორებს -->
+
+</body>
+</html>

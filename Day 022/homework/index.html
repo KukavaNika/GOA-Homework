@@ -1,0 +1,68 @@
+<!--0)ჩანაწერს გადახედეთ თავიდან
+
+1)შექმენით საიტი სადაც იქნება თქვენი საყვარელი საჭმელები,რომელსაც ექნება სათაური:"My Favourite Foods".
+    
+  •საიტი უნდა შედგებოდეს რამოდენიმე სექციისგან
+
+  •თითოეულ სექციაში უნდა იყოს საჭმლის დასახელება და მასზე მცირე ინფორმაცია
+
+  •თითოეულ სექციაში ასევე უნდა იყოს ფოტო კონკრეტული საჭმლის 
+
+  •გამოიყენეთ Inlince CSS და გასტილეთ ელემენტები (მაგ:მიეცით ფერი,შეუცვალეთ ტექსტს ზომა და ა.შ)
+
+  •გამოიყენეთ <section> თეგები
+
+2)ახსენით რით განსხვავდება ერთმანეთისგან Inline CSS, Internal CSS და External CSS.
+
+3)ახსენით რაში გამოიყენება თითოეული თეგი (head,main,footer,section,aside,article)-->
+
+<!--1-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Foods</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f8f8f8; text-align: center;">
+
+    <h1 style="color: #ff5733;">My Favourite Foods</h1>
+
+    <section style="background-color: #ffe6e6; padding: 20px; margin: 20px; border-radius: 10px;">
+        <h2 style="color: #d9534f;">Pizza</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgh6Xx8CBnZM8NPOmIEOwqV_KK6PnE1pluA&s" alt="Pizza" width="300">
+        <p style="font-size: 18px; color: #555;">Pizza is an Italian dish made with a crispy crust, tomato sauce, and melted cheese.</p>
+    </section>
+
+    <section style="background-color: #e6f7ff; padding: 20px; margin: 20px; border-radius: 10px;">
+        <h2 style="color: #337ab7;">Sushi</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1y1nnDRGO8KjB4RCjgZemvguU4enZc23RpA&s" alt="Sushi" width="300">
+        <p style="font-size: 18px; color: #555;">Sushi is a Japanese dish consisting of vinegared rice, seafood, and vegetables.</p>
+    </section>
+
+    <section style="background-color: #e6ffe6; padding: 20px; margin: 20px; border-radius: 10px;">
+        <h2 style="color: #5cb85c;">Burger</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8ktWwxGRbYhlQwUVmzvnJ-iIDm5Gubnv9g&s" alt="Burger" width="300">
+        <p style="font-size: 18px; color: #555;">A burger is a popular fast food meal with a grilled patty, lettuce, cheese, and sauce inside a bun.</p>
+    </section>
+</body>
+</html>
+
+
+<!--2-->
+
+<!--CSS ტიპის აღწერა გამოყენება:
+Inline CSS	სტილი იწერება უშუალოდ HTML ელემენტში style ატრიბუტის საშუალებით.	გამოიყენება, როცა გვჭირდება კონკრეტული ელემენტის სწრაფი გასტილვა.
+Internal CSS სტილი იწერება <style> თეგში, რომელიც მდებარეობს <head> ნაწილში.	გამოიყენება, როცა გვჭირდება კონკრეტული გვერდის სტილების მართვა.
+External CSS ცალკე .css ფაილში ინახება სტილები და HTML დოკუმენტში link-ით ერთვის.	საუკეთესო პრაქტიკაა, როცა ერთზე მეტ გვერდს ვიყენებთ.-->
+
+<!--3-->
+
+<!--თეგი დანიშნულება:
+<head>	შეიცავს მეტამონაცემებს (მაგალითად, <title>, <meta>, <link> სტილების ან სკრიპტების ჩასამატებლად).
+<main>	გვერდის მთავარი კონტენტი, რომელიც უნიკალურია და ძირითადი ინფორმაციაა მოთავსებული.
+<footer>	გვერდის ქვედა ნაწილი, სადაც განთავსებულია საკონტაქტო ინფორმაცია, საავტორო უფლებები და სხვა ბმულები.
+<section>	გამოიყენება კონტენტის დასაყოფად ლოგიკურ ნაწილებად. (მაგალითად, საჭმლის კატეგორიები).
+<aside>	გვერდითი სექცია, რომელიც ხშირად შეიცავს დამატებით ინფორმაციას ან რეკლამებს.
+<article>	ცალკეული კონტენტის ნაწილი, რომელიც დამოუკიდებლადაც აზრიანია (მაგალითად, ბლოგის პოსტი).-->

@@ -1,0 +1,45 @@
+<!--1) გააკეთეთ ზუსტად ისეთი როგორიც ფოტოშია ნაჩვენები
+
+2) შექმენით პარაგრაფი რომელსაც ქვეშ ექნება გასმული ტალღოვანი ხაზი და ამ ხაზის ფერი იქნება მწვანე ხოლო ტექსტის ფერი შავი
+
+3) შექმენით პარაგრაფი რომელსაც ზემოდანაც და გვემოდანაც ექნება წყვეტილი ხაზებით გასმული ხაზი ამ ხაზის ფერი უნდა იყოს წითელი
+
+4) შექმენით პარაგრაფი რომელსაც შუაში ექნება წყვეტილი ხაზები გასმული ლურჯ ფერში (edited)
+
+
+5)გამოიყენეთ rgb ფერები ან hex code-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Paragraphs</title>
+    <style>
+        .wavy-underline {
+            text-decoration: underline wavy #008000;
+            color: #000000;
+        }
+
+        .dashed-top-bottom {
+            border-top: 2px dashed #FF0000; 
+            border-bottom: 2px dashed #FF0000; 
+            padding: 10px 0;
+        }
+
+
+        .dashed-middle {
+            border-top: 2px dashed transparent;
+            border-bottom: 2px dashed transparent;
+            background: linear-gradient(to right, transparent 49%, #0000FF 49%, #0000FF 51%, transparent 51%);
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <p class="wavy-underline">ეს არის ტალღოვანი  ხაზით გაფორმებული ტექსტი.</p>
+    <p class="dashed-top-bottom">ეს ტექსტი ზემოთ და ქვემოთ წყვეტილი  ხაზით არის გაფორმებული.</p>
+    <p class="dashed-middle">ეს ტექსტი შუაში წყვეტილი ხაზით არის გაფორმებული.</p>
+</body>
+</html>

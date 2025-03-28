@@ -1,0 +1,82 @@
+<!--0)ჩანაწერს გადახედეთ თავიდან.
+
+1)კომენტარის სახით ახსენით განსხვება Inline - Internal - External CSS-ს შორის.
+
+2)შექმენით მსგავსი დიზაინის მქონე Table.
+
+3)შექმენით ცხრილი სადაც იქნება თქვენი მეგობრების სახელები და მათი ასაკები ,შემდეგ
+
+ცხრილში მოთავსებულ სახელებს შეუცვალეთ ტექსტის ფერები(რა ფერიც გინდათ მიეცით) და  ცხრილში
+
+მოთავსებულ ელემენტებს შეუცვალეთ ბექგარუნდის ფერები
+
+4)შექმენით HTML ფაილი სამი სათაურით (h1, h2, h3). თითოეულს მიანიჭეთ უნიკალური id 
+
+(heading1, heading2, heading3). შემდეგ თითოეულს მიეცით განსხვავებული ფერები-->
+
+<!--1
+Inline CSS – სტილები პირდაპირ ელემენტში წერია style ატრიბუტის გამოყენებით. მაგალითად:
+<p style="color: red; font-size: 16px;"></p>
+
+Internal CSS – სტილები HTML დოკუმენტის <head>-ის შიგნით მდებარე <style> თეგში წერია. მაგ:
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+
+External CSS – სტილები ცალკე .css ფაილში ინახება და HTML-თან <link> თეგის საშუალებით უკავშირდება. მაგ:
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+-->
+
+ <!--2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>chapter 1</th>
+            <th>chapter 2</th>
+        </tr>
+        <tr>
+            <td> information 1</td>
+            <td> information 2</td>
+        </tr>
+        <tr>
+            <td> information 3</td>
+            <td>information 4</td>
+        </tr>
+    </table>
+</body>
+</html>
+

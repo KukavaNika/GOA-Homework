@@ -1,0 +1,123 @@
+<!--2) შექმენით ონლაინ მაღაზია, სადაც გაყიდით კომპიუტერულ აქსესუარებს. მაღაზიაში უნდა გქონდეთ მინიმუმ 5 პროდუქტი. თითოეულ პროდუქტს უნდა ეწეროს დასახელება(title), აღწერა და ფასი, ასევე ღილაკი "Buy". გამოიყენეთ ტექსტის ფორმატირების და სემატიკური თეგები-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Accessories Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h2 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #666;
+        }
+        .product .price {
+            font-size: 1.25rem;
+            color: #1E90FF;
+            margin-top: 10px;
+        }
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 15px;
+        }
+        .product button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Computer Accessories Store</h1>
+    <p>Your one-stop shop for all computer accessories</p>
+</header>
+
+<div class="container">
+    <article class="product">
+        <img src="https://www.cdiscount.com/pdt2/6/5/4/1/700x700/auk1712653391654/rw/clavier-gamer-aukey-km-g6-105-key-blue-axis-rgb-me.jpg" alt="Mechanical Keyboard">
+        <h2>Mechanical Keyboard</h2>
+        <p>Durable mechanical keyboard with RGB lighting. Perfect for gaming and typing.</p>
+        <p class="price">$120</p>
+        <button>Buy</button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt89iUppSsfZZpVgtF608i-0j3wv2NHQEeag&s" alt="Gaming Mouse">
+        <h2>Gaming Mouse</h2>
+        <p>Ergonomically designed gaming mouse with customizable DPI and programmable buttons.</p>
+        <p class="price">$40</p>
+        <button>Buy</button>
+    </article>
+
+    <article class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVK28iZZgZGOF9KVLsAj3mer_77psvKd3fw&s" alt="Wireless Headset">
+        <h2>Wireless Headset</h2>
+        <p>Comfortable wireless headset with noise-canceling features and long battery life.</p>
+        <p class="price">$150</p>
+        <button>Buy</button>
+    </article>
+
+    <article class="product">
+        <img src="https://i.ebayimg.com/images/g/3icAAOSwf4pncDag/s-l1600.webp" alt="LED Monitor">
+        <h2>LED Monitor</h2>
+        <p>24-inch LED monitor with full HD resolution and fast refresh rate.</p>
+        <p class="price">$3023</p>
+        <button>Buy</button>
+    </article>
+
+    <article class="product">
+        <img src="https://ultra.ge/image/cache/catalog/Gvantsa/NOXO%20PrecisionL01-750x1000.jpg" alt="Gaming Mousepad">
+        <h2>Gaming Mousepad</h2>
+        <p>Large gaming mousepad with a smooth surface for precise control and long-lasting durability.</p>
+        <p class="price">$25</p>
+        <button>Buy</button>
+    </article>
+</div>
+
+</body>
+</html>
+
+<!--3) კომენტარებით ახსენით, რა განსხვავებაა ტექსტის ფორმატირების თეგებსა და სემატიკურ თეგებს შორის და რისთვის გამოიყენება ისინი-->
+<!--ტექსტის ფორმატირების ტეგები გამოიყენება ტექსტის შინაარსზე ვიზუალური სტილისა და სტრუქტურის გამოსაყენებლად.-->
+<!--სემანტიკური ტეგები, მეორეს მხრივ, ატარებენ მნიშვნელობას იმ შინაარსის შესახებ, რომელსაც ისინი ახვევენ. ისინი განსაზღვრავენ დოკუმენტის სტრუქტურას და აღწერენ შინაარსის როლს ან მიზანს გვერდზე. -->
