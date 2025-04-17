@@ -1,0 +1,22 @@
+.columns {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+  }
+  .col {
+    flex: 1;
+    padding: 2rem;
+    color: white;
+  }
+  .col1 { background: #e28525; }
+  .col2 { background: #016972; }
+  .col3 { background: #00403f; }
+  button {
+    background: white;
+    color: inherit;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,12 @@
+
+.blue-box {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+  margin: 100px auto;
+  transition: background-color 2s ease;
+}
+
+.blue-box:active {
+  background-color: green;
+}

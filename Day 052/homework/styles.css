@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background: linear-gradient(to top, #b3e5fc, #e1f5fe);
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .sky {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .plane {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: white;
+    clip-path: polygon(50% 0%, 100% 100%, 50% 75%, 0% 100%);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    animation: flyAcross 8s linear infinite;
+  }
+
+  @keyframes flyAcross {
+    0% {
+      left: -60px;
+      top: 20%;
+      transform: rotate(5deg);
+    }
+    50% {
+      top: 50%;
+      transform: rotate(-5deg);
+    }
+    100% {
+      left: 100%;
+      top: 30%;
+      transform: rotate(0deg);
+    }
+  }

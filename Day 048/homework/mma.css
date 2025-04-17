@@ -1,0 +1,40 @@
+/* mma.css */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px;
+    z-index: 999;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hero {
+    padding-top: 100px;
+    background: url('https://scontent.ftbs5-4.fna.fbcdn.net/v/t39.30808-1/473801313_8921769074585951_2428163049335763725_n.jpg?stp=c292.0.1463.1463a_dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=2d3e12&_nc_eui2=AeH5fnhwxOjB9nQGIj-pZAEFcffU6g-CCkpx99TqD4IKSkDaeRsMLgv_Cu9kVXI4sCNP9A7zRiZXSlRwv_O7wDn8&_nc_ohc=-QxNKlFWSf4Q7kNvwHk6Up_&_nc_oc=AdlgSfQTeGZgy-JjLU36YWFyPdXTwp6wyc3xf5erAe2FQQYRZDCSFeVJxnmUgcFu6es&_nc_zt=24&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=xDy_si7NgZRWJFngxwCIfQ&oh=00_AfH5kSE8sdv5jgF8H9DUQduU05nkmeoeYk6RGPYgqxbIVA&oe=67FC5CC8') center/cover no-repeat;
+    height: 400px;
+    color: white;
+    text-align: center;
+  }
+  
+  .about {
+    padding: 40px;
+    background: #f4f4f4;
+  }
+  

@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0b0c10;
+    color: #fff;
+  }
+
+  .site-wrapper {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    background-color: #1f2833;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  h1 {
+    color: #66fcf1;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  /* რესპონსივი */
+  @media (max-width: 768px) {
+    .site-wrapper {
+      width: 40%;
+      font-size: 0.8rem;
+    }
+  }

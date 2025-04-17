@@ -1,0 +1,32 @@
+.holiday-container {
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .holiday-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .holiday-container p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #444;
+  }
+
+  /* რესპონსივი */
+  @media (max-width: 768px) {
+    .holiday-container {
+      width: 90%;
+    }
+
+    .holiday-container img {
+      width: 70%;
+    }
+
+    .holiday-container p {
+      font-size: 1rem;
+    }
+  }

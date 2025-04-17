@@ -1,0 +1,41 @@
+<!--1) კომენტარების სახით ჩამოწერეთ position-ის კუთვნილებები (properties) და ახსენით თუ რას აკეთებს თითოეული მათგანი.
+
+2) საიტზე შექმენით  მსგავსი განლაგებები flex-ის გამოყენებით:
+
+3)  შექმენით საიტი MMA-ს შესახებ, სადაც რეკლამირებას გაუკეთებთ GOA martial arts-ს. საიტზე დაამატეთ ნავიგაცია, რომელსაც გაუწერთ position: fixed-ს. ეცადეთ გამოიყენოთ აქამდე განვლილი ყველა მასალა და საიტის დიზაინი  დახვეწეთ მაქსიმალურად
+
+4) დაასრულეთ წინა საშინაო დავალების პროექტი-->
+
+
+<!--1
+position: static; // Default მნიშვნელობა – ელემენტი იკავებს ჩვეულებრივ ადგილს დოკუმენტში.
+
+position: relative; // ელემენტი ინარჩუნებს თავის ჩვეულ პოზიციას, მაგრამ შეიძლება გადაიწიოს top/right/bottom/left მეშვეობით.
+
+position: absolute; // ელემენტი პოზიცირდება უახლოეს პოზიცირებულ მშობელთან (position != static). აღარ იკავებს ადგილი დოკუმენტში.
+
+position: fixed; // ელემენტი მიბმულია ფანჯარაზე – არ მოძრაობს გვერდის გადახვევისას.
+
+position: sticky; // ელემენტი behaves like relative სანამ კონკრეტულ წერტილამდე მიაღწევს, შემდეგ fixed-ივით იქცევა. 
+
+-->
+
+<!--2-->
+<!-- HTML -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="flex-container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+      
+ </body>
+ </html>

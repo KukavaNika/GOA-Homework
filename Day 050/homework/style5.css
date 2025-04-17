@@ -1,0 +1,26 @@
+.stats-card {
+    display: flex;
+    background: hsl(244, 38%, 16%);
+    color: white;
+    max-width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .text-side {
+    padding: 40px;
+    flex: 1;
+  }
+  .img-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .stats div {
+    text-align: center;
+  }
+  
