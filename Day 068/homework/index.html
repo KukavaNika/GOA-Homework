@@ -1,0 +1,97 @@
+<!--1) კომენტარის სახიდ ვრცლად ახსენით რა არის DOM
+
+2) რა განსხვავებაა let და const'ს შორის
+
+3) შექმენით ღილაკი რომელზეც დაკლიკებისას მომხმარებელს გამოუტანს alert box'ს სადაც ეწერება "Hello User"
+
+4) შექმენით img რომელზე დაკლიკებისაც img'ს შეეცვლება ზომა და გაიზრდება 
+
+5) შექმენით ცვლადი და გაანახელთ მისი მნიშვნელობა 
+
+6) რას დაბეჭდავს ეს კოდი:
+let x = 5 ;
+console.log(x++);
+console.log(++x);-->
+
+
+
+
+
+
+<!--1-->
+<!--document ობიექტი-->
+<!--სადაც მთლიანი ჩვენი კოდი ანუ მთლიანი html ის დოკუმენტი  არის მოთავსებული-->
+
+
+<!--2-->
+<script>
+    //let და const'ს შორის განსხვავება ის არის რომ :-->
+//დავიწყოთ const-ით ეს ელემენტი როომ გავშიფროთ ნიშნავს (constant) კონსტანტას ანუ (მუდმივს) ესეიგი  მაგალითის შემთხვევაში ხდება ესე: -->
+
+    const name = "tamo" // აქ უკვე ვინახავთ ცვლადში ანუ const ში ჩვენს მნიშვნელობას age = 20
+    //ეხლა რას ნიშნავს მუდმივი
+    //თუ ჩვენ მოვინდომებთ მის ახალი კუთვნილების მინჭებას მაგალითად თუ გვინდა რომ შევცვალოთ და ახალი მიშვნელოდა მივანიჭოთ აი ესე:
+   //name = "tamuna"
+    //არაფერი არ შეიცვლება და დარჩება იგივე 20 იმიტომ რომ ეს არის მუდმივი და რაც არ უნდა მოხდეს ის დარჩება სულ და მუდამ ამას ვიყენებთ იმ შემთხვევაში
+    //თუ ჩვენ გვინდა რაიმე ინფორმაციის შეყვანა და დარჩენა მუდამ 
+
+
+//let არის ცვლადი როგორც const მაგრამ მათ აქვთ ერთი განსხვავება აი მაგალითად :
+let family = 2 // აქ ჩვეულებრივ როოგორც  const ში ვინახავდით იმფორმაციას ცვლლადში იგივეა მაგრამ რა მოხდება თუ ჩვენ მის შეცვლას 
+//ანუ ახალ ინფორმაციის შეყვანას და ძველის გადაკეთბა ახლად მოგვინდება
+family = 29 // აქ const სგან განსხვავებით ჩვენ ცვლადში  ინფორმაცია შეიცვლება იგი არ არის მუდმივი როგორც const let ის ახალი ინფორმაცისს და ძველი
+//ინფორმაციის გადაკეტება შეგვიძილა ყოველთვის ამიტომ ცვლადების შესაცვლელეად ვიყენებთ ძირითადად let ხოლო თუ გვინდა რაიმე ელემანტი არ 
+//შეიცვალოს და უცვლელი დარჩეს მუდამ ვქმნით ცვლადს სახელად const.
+    </script>
+
+<!--3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('Hello User')">Click Me</button>
+</body>
+</html>
+
+<!--4-->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfvjGIu86Ej-yHX1qqS8VzpM-HU1q4QAv8MQ&s" onclick="this.style.width='300px'; this.style.height='300px';" style="width:100px; height:100px;">
+
+
+
+<!--5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mycar = bmw;
+        mycar = mersedes;
+    </script>
+</body>
+</html>
+
+<!--6-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 5 ;
+console.log(x++);
+console.log(++x);
+    </script>
+</body>
+</html>
+
