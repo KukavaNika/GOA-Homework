@@ -1,0 +1,89 @@
+<!--1) შექმენით ობიექტი რასაც ჩამოწერთ თქვენს თავზე ინფორმაციას, შემდეგ ამ ობიექტიდან გამოიტანეთ თქვენი სახელი და გვარი.
+
+2) შექმენით ობიექტი სადაც შეიყვანთ სახელსა და გვარს შემდეგ კი გაანახლეთ მათი value'ბი და გამოიტანეთ ეს ობიექტი. 
+
+3) დაწერეთ დღეს შესწავლილი var' ის შესახებ და შეადარეთ იგი let და const'ს.
+
+4) შექმენით ცვლადი რომელსაც გადასცემთ სტრინგს შემდეგ კი დააბრუნეთ ამ ცვლადის სიგრძე.
+
+5) შექმენით ცვლადი და გადაიყვანეთ იგი uppercase'ში შემდეგ კი lowercase'ში. 
+
+6) დღეს ნასწავლ ყველა ფუნქციაზე გააკეთეთ 5-5 მაგალითი.-->
+
+
+
+<!--1-->
+
+<script>
+const myself = {
+    name: "Nika",
+    lastname: "kukava",
+    age: 16,
+    professon: ["bodybuilder", "programmer"],
+    favoritecars: ['mersedes cls 63 amg', 'bmw M5 f90', 'Audi rs8'],
+    favoritefood: ['katchapuri', 'pizza', 'kinkali']
+}
+console.log(myself.name , myself.lastname);
+</script>
+
+<!--2-->
+<script>
+    let object = {
+        name: 'nika',
+        lastname: 'kukava',
+    }
+    object.name = 'irakli',
+    object.lastname = 'feridze',
+    console.log(object);
+</script>
+
+
+<!--3-->
+<!-- var არის ძველი ფუნქციების შესაქმნელი და არის საშინელი და ძალიან ცუდი ცვლადების შესაქმნელად რადგან var ს გააჩნია hosting ანუ უცვლის დოკუმენტში 
+ რამე მნუშვნელობას var ით შექმნილი ცვლადი და მის ნაცვლად დგება  var ით შექმნილი ცვადი შეგიძლია ცვლადის განახლება  var ში  -->
+
+<!--let თანამედროვე ცვლადების შექმნის მეთოდი ის არ ეხება არაფერს და არის block ანუ მისი შექმნილი documment ზე არ ახდენს არავიტარ ზეგავლენას და საერთოდ
+ცალკე იქმნება ასევე როგორც var ისე შეწგიძლია აქაც ცვლადის მნიშვნელობის გგანახლება  რეკომენდირებულია !!!-->
+
+
+<!--const  არის თანამედროვე ცვლადების შექმნის მეთოდი როგორც let და არის ისიც block არ ეხება და არ აზიანებს website ს როგორც let
+ზუსტად იგივეა მაგრამ ერთი განსხვავებაა მათ შორის const ით შექმნილი ცვლადი  რჩება მუდმივად და მნიშვნელობის განახლება არ შეგვიძლია ამიტომ
+მას მხოლოდ რაიმე მუდმივი, უცვლელი ცვლადის შესაქმნელად იყენებენ ესეც რეკომენდირებულია!!! -->
+
+<!-- მოკლედ რომ ვთქვათ var ჩანაცვლდა ამ ორი იდეალური ცვლადის შემქმნელებით  var დაივიწყეს და ხმარებიდან ამოიღეს-->
+
+
+<!--4-->
+
+<script>
+    let string = 'hellow world'
+     lengthstring = string.length
+    console.log(lengthstring);
+</script>
+
+<!--5-->
+<script>
+let uppertext = "hello World";
+upperText = text.toUpperCase();
+
+let lowertext = 'HELLOW WORLd'
+lowertext = text.toLowerCase();
+
+console.log(lowertext);
+console.log(upperText);
+</script>
+
+
+<!--6-->
+
+
+<script>
+function isSquare(n) {
+  return Number.isInteger(Math.sqrt(n));
+}
+
+console.log(isSquare(25)); 
+console.log(isSquare(26)); 
+
+</script>
+
