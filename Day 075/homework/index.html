@@ -1,0 +1,85 @@
+
+
+
+
+
+<!--გააკეთეთ 15 ცალი 7kyu.-->
+
+<script>
+
+   //1
+    function squareDigits(num) {
+  return +num.toString().split('').map(n => n * n).join('');
+}
+
+
+
+//2 
+function accum(s) {
+  return s.split('').map((c, i) => c.toUpperCase() + c.toLowerCase().repeat(i)).join('-');
+}
+
+
+//3
+function highAndLow(numbers){
+  let arr = numbers.split(' ').map(Number);
+  return Math.max(...arr) + " " + Math.min(...arr);
+}
+
+//4
+function descendingOrder(n){
+  return +n.toString().split('').sort((a,b) => b - a).join('');
+}
+
+
+//5
+
+function findShort(s){
+  return Math.min(...s.split(' ').map(w => w.length));
+}
+
+
+//6
+function XO(str) {
+  str = str.toLowerCase();
+  return str.split('x').length === str.split('o').length;
+}
+
+
+//7
+function filter_list(l) {
+  return l.filter(i => typeof i === 'number');
+}
+
+//8
+function findNextSquare(sq) {
+  let root = Math.sqrt(sq);
+  return Number.isInteger(root) ? (root + 1) ** 2 : -1;
+}
+
+
+//9
+function oddOrEven(array) {
+  return array.reduce((a,b) => a + b, 0) % 2 === 0 ? "even" : "odd";
+}
+
+
+//10
+function sumTwoSmallestNumbers(numbers) {  
+  numbers.sort((a,b) => a - b);
+  return numbers[0] + numbers[1];
+}
+
+//11
+function solution(str, ending){
+  return str.endsWith(ending);
+}
+
+
+//12
+function getCount(str) {
+  return (str.match(/[aeiou]/gi) || []).length;
+}
+
+
+</script>

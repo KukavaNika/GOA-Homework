@@ -1,0 +1,63 @@
+<!--1) "!" ოპერატორზე შეასრულეთ 5 true და 5 false ოპერაციები.
+
+2) შექმენით ცვლადი რომელშიც შეინახავთ 0-100 მდე რენდომ რიცხვს შემდეგ კი გამოიტანეთ შეფასება თუ მაგალითად 90'დან 100'ის ჩათვლით ექნება ქულა გამოუტანეთ "Grade A", თუ 80'დან 89'ის ჩათვლით გამოუტანეთ "Grade B" და ა.შ.
+
+3) შექმენით ცვლადი სადაც 10'ის ფარგლებში რანდომულად შეინახავთ რაღაც რიცხვს თუ ეს რიცხვი მეტი იქნება 5'ზე მაშინ დააბრუნეთ ეს რიცხვი სხვა შემთხვევაში დააბრუნეთ მისი კვადრატი.
+
+4) შექმენით name ცვლადი სადაც შეინახავთ თქვენთვის სასურველ სახელს. თუ სახელის სიგრძე მეტია 5'ზე გამოიტანეთ "this is my friend" სხვა შემთხვევაში დააბრუნეთ ეს სახელი.-->
+
+
+
+<script>
+ //1
+  //true
+console.log(!false);         
+console.log(!0);             
+console.log(undefined);     
+console.log(!null);          
+console.log(!"");          
+ //false
+console.log(!true);          
+console.log(!1);          
+console.log(!"hello");       
+console.log(![]);            
+console.log(!{});           
+
+
+
+
+//2
+let score = Math.floor(Math.random() * 101);
+console.log("Score:", score);
+
+if (score >= 90 && score <= 100) {
+  console.log("Grade A");
+} else if (score >= 80 && score < 90) {
+  console.log("Grade B");
+} else if (score >= 70 && score < 80) {
+  console.log("Grade C");
+} else if (score >= 60 && score < 70) {
+  console.log("Grade D");
+} else {
+  console.log("Grade F");
+}
+
+
+//3
+let num = Math.floor(Math.random() * 11);
+console.log("Generated:", num);
+
+let result = num > 5 ? num : num * num;
+console.log("Result:", result);
+
+
+//4
+let name = "გიო"; 
+
+if (name.length > 5) {
+  console.log("this is my friend");
+} else {
+  console.log(name);
+}
+
+</script>
