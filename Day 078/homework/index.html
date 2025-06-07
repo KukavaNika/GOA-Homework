@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//1) მომხმარებელს შემოატანინეთ რიცხვი და უთხარით ლუწია თუ კენტი. 
+
+//2) მაღაზიაში არის ფასდაკლება მხოლოდ არასრულწოვნებზე. არასრუწლოვანი ადამიანი მიიღებს 50%იან ფასდაკლებას ხოლო სრულწლოვანი გადაიხდის ჩვეულებრივ ფასს. მომხმარებელს შემოატანინე მისი წლოვანება და დაწერეთ პროგრამა რომელიც ადამიანს ეტყვის მან მიიღო თუ არა ფასდაკლება.
+
+//3) მაღაზიაში არის ფასდაკლება მხოლოდ არასრულწოვნებზე და 18 წლის ხალხზე. არასრუწლოვანი ადამიანი მიიღებს 50%იან ფასდაკლებას, 18 წლის ადამიანი მიიღებს 25% ფასდაკლებას, ხოლო სრულწლოვანი გადაიხდის ჩვეულებრივ ფასს. მომხმარებელს შემოატანინეთ მისი ასაკი და დაწერეთ პროგრამა რომელიც ადამიანს ეტყვის მან მიიღო თუ არა ფასდაკლება და თუ მიიღო რამდენი.
+
+//4) კომენტარის სახით ახსენით რა შემთხვევაში აქვს ცვლადს false/true მნიშვნელობა პასუხ დაწერეთ ვრცლად
+
+//5) მომხმარებელს შემოატანინეთ სახელი თუ მისი სახელის სიგრძე აღემატება 6 მაშინ დაბეჭდეთ "hello my friend 'name!' სხვა შემთხვევაში "hello 'name'!"
+
+
+//1
+let number = prompt("Enter a number:");
+
+number = parseInt(number);
+
+if (number % 2 === 0) {
+  console.log("The number is even.");
+} else {
+  console.log("The number is odd.");
+}
+  
+//2
+//ვერ გავაკეთე
+
+
+
+//3
+let age = parseInt(prompt("Enter your age:"));
+
+if (age < 18) {
+  alert("You get a 50% discount.");
+} else if (age === 18) {
+  alert("You get a 25% discount.");
+} else 
+  alert("You have to pay the full price.");
+
+
+
+  //4
+
+let x = 0;
+if (x) {
+  console.log("x is truthy");
+} else {
+  console.log("x is falsy"); 
+}
+
+let y = "hello";
+if (y) {
+  console.log("y is truthy"); 
+}
+
+
+//5
+let name = prompt("Enter your name:");
+
+if (name.length > 6) {
+  alert(`hello my friend ${name}!`);
+} else {
+  alert(`hello ${name}!`);
+}
+
+
+    </script>
+</body>
+</html>

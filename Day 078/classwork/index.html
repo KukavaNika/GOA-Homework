@@ -1,0 +1,34 @@
+<script>
+    //1)მომხმარებელს შემოატანინეთ თვისი წლოვანება თუ ასაკი არ აღემატება 14 გამოიტანეთ "you are kid" თუ ასაკი აღემატება 14 მაგრამ არ აღემატება 18 დააბრუნეთ "you are not adult yet" და თუ აღემატება 18 დააბრუნეთ "you are adult"
+    //2)შემქენით ცვლადი რომელშიც შეინახავთ თქვენთვის სასურველ სახელს ან დატოვებთ ცარიელს თუ ცვლადი იქნება true მიესალმეთ ამ სახელს სხვაშემთხვევაში მიანიჭეთ "guest" და შემდეგ მიესალმეთ მას
+    // შექმენით ცვლადი სადაც მომხმარებელს შემოატანინებთ თავის სახელს შემდეგ შემქნით ცვლადი სადაც მომხმარებელს შემოატანინებთ თავის ასაკს თუ ასაკი არ აღემატება 18 გამოიტანეთ "you are not adult yet 'name'!" თუ ასაკი აღემატება 18 მაშინ გამოიტანეთ "Hello 'name'!"
+
+
+
+    //1
+    
+    let age = prompt("Enter your age:");
+if (age <= 14) {
+    console.log("you are kid");
+} else if (age > 14 && age <= 18) {
+    console.log("you are not adult yet");
+} else {
+    console.log("you are adult");
+}
+
+
+
+  //2
+
+
+
+
+  //3
+  let userName = prompt("Enter your name:");
+let userAge = prompt("Enter your age:");
+if (userAge <= 18) {
+    console.log("you are not adult yet " + userName + "!");
+} else {
+    console.log("Hello " + userName + "!");
+}
+</script>
