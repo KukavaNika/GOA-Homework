@@ -1,0 +1,81 @@
+
+
+
+
+<!--იგივე კლასვორკი გვქონდა-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1)შექმენით სია 30 ელემენტით, შემდგომ გადაურეთ მას ფორ ლუპით,  და გამოიტანეთ ყველა ელემნტი
+        //გამოიყენეთ of 
+
+    //2)შექმენით 2 სია, შემდეგ პირველ სიაში ჩაამატეთ 10 ელემენტი,შემდეგ პირველი სიიდან მეორე სიაში ჩამატეთ ყველა ელემნტი ფორ ლუპით
+    //გამოიყენთ of
+
+    //3)სტრინგს გადაუარეთ ფორ ლუპით და შეამოწმე არის თუარა ის ხმოვანი, თუ არის გამოიტანეთ თუარა არ გამოიტანოთ
+    //გამოიენეთ of
+
+    //4)ახსენით რა არის block scope, global scope, local scope
+
+    //5)მოიყვანეთ მაგალითები block scope, global scope, local scope ზე (edited)
+   //NEW
+   //July 4, 2025
+   //NEW
+
+
+   //1
+   const list = [];
+
+for (let i = 1; i <= 30; i++) {
+  list.push(i); 
+}
+
+for (const item of list) {
+  console.log(item); 
+}
+
+
+//2
+const firstList = [];
+const secondList = [];
+
+for (let i = 1; i <= 10; i++) {
+  firstList.push(i);
+}
+
+for (const item of firstList) {
+  secondList.push(item);
+}
+
+console.log("First List:", firstList);
+console.log("Second List:", secondList);
+
+
+
+//3
+const text = "Programming is awesome!";
+const vowels = "aeiouAEIOU";
+
+for (const char of text) {
+  if (vowels.includes(char)) {
+    console.log(char); 
+  }
+}
+
+//4
+// block scope - let ან const ცვლადები, გამოცხადებული { } ბლოკში (მაგ. if, for, {}). ხელმისაწვდომია მხოლოდ ამ ბლოკში.
+
+//  local scope - ცვლადები გამოცხადებული ფუნქციის შიგნით. მხოლოდ ამ ფუნქციაშია ხელმისაწვდომი.
+
+//  global scope -  ცვლადები გამოცხადებული ფუნქციების და ბლოკების გარეთ ყველგან ხელმისაწვდომია
+
+
+//5
+// ვერ გავაკეთე
