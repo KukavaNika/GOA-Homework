@@ -1,0 +1,47 @@
+<!--1) კომენტარის სახით ახსენით როგორ იქმნება მოვლენის მსმენელი და რაში გვეხმარება იგი 
+
+2) კომენტარის სახით ახსენით event ბლოკი რას აკეთებს და რაში გვჭირდება ის 
+
+3) შექმენით საიტი თქვენთვის სასურველ თემაზე საიტზე სანამ შევალთ პირველ რიგში გააკეთეთ სარეგისტრაციო ფორმა რომელზეც მომხმარებელს შეეძლება დარეგისტრირება დაამატეთ სახელი, ემაილი, პაროლი და ასევე ერთი submit ინფუთი რეგისტრაციის დროს მომხმარებლის ინიციალები გამოვიდეს კონსოლში და გადავიდეთ მთავარ საიტზე სადაც განათავსებთ თქვენთვის სასურველ თემას 
+
+4) შექმენით დივი რომელსაც მისცემთ სიგრძეს, სიგანეს და ყვითელ ფერს შემდეგ მასზე მოახდინეთ მოვლენის მსმენელი და მასზე დაკლიკების დროს დივმა მიიღოს ლიმონის ფორმა 
+
+5) მოვლენის მსმენელზე და event ბლოკზე გააკეთეთ 5 მაგალითი -->
+
+
+<!--1-->
+
+<!--// Event ბლოკი არის ობიექტი რომელიც ინახავს ინფორმაციას მიმდინარე მოვლენაზე.
+// მაგ: რომელი ღილაკი დააკლიკა მომხმარებელმა, სად მოხდა დაკლიკება, რომელი ღილაკი იყო კლავიატურაზე დაჭერილი და ა.ს.შ
+// გვჭირდება იმისთვის რომ უფრო დეტალურად ვმართოთ მოვლენა და მოვახდინოთ კონკრეტული რეაგირება.
+-->
+
+
+<!--2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div id="registerPage">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Name" required><br>
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+<div id="box"></div>
+
+  <div id="mainPage" style="display:none;">
+    <h1>Gaming Website</h1>
+    <p>Welcome! Here you can find information about games, news, and fun facts.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

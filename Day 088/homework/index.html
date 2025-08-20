@@ -1,0 +1,89 @@
+<!--1) შექმენით სარეგისტრაციო ფორმა 3 ინფუთით ემაილი, პაროლი და submit ინფუთები submit ინფუთზე დაადეთ მოვლენის მსმენელი რომელიც კლიკის დროს კონსოლში გამოიტანს ემაილს და პაროლს
+
+2) JS'ში შექმენით ცვლადი სადაც შეინახავთ თქვენს სახელს ასევე HTML'ში შექმენით ერთი ღილაკი ღილაკზე დაადეთ მოვლენის მსმენელი და დაკლიკების დროს კონსოლში გამოიტანეთ Hello {name}!
+
+3) კომენტარის სახით ვრცლად ახსენით დღეს ნასწავლი სკოუპები და შეეცადეთ გააკეთოთ მაგალითებიც.
+
+4) HTML' ში შექმენით ერთი ღილაკი JS 'ში კი ერთი გლობალური ცვლადი num რომელსაც გაუტოლებთ თავიდან ნულს, შემდეგ კი JS 'ში აიდის მეშვეობით წამოიღეთ ღილაკი ამ ღილაკზე კი დაადეთ მოვლენის მსმენელი და ყოველი დაკლიკების დროს ცვლადის მნიშვნელობას დაუმატეთ 2 და გამოიტანეთ კონსოლში
+
+5) შექმენით სარეგისტრაციო ფორმა თქვენთვის სასურვლეი ინფუთებით და submit ინფუთით შემდეგ JS 'ში აიდის საშუალებით წამოიღეთ ეს ინფუთი და დაადეთ მოვლენის მსენელი რომელიც დაკლიკების დროს გამოიტანს alert'ს "Registration completed successfully."-->
+
+
+<!--1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form id="registerForm">
+  <input type="email" id="email" placeholder="Email"><br>
+  <input type="password" id="password" placeholder="Password"><br>
+  <input type="submit" value="Register">
+</form>
+
+<script>
+  document.getElementById('registerForm').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    console.log("Email:", email);
+    console.log("Password:", password);
+  });
+</script>
+
+</body>
+</html>
+
+
+<!--2-->
+<!--სკოუპი (Scope) არის ის არეალი, სადაც ცვლადები ხელმისაწვდომია.
+
+ გლობალური სკოუპი:
+  ეს ცვლადები ხელმისაწვდომია ყველგან კოდში.
+  მაგ:
+  let a = 10;
+  function show() {
+    console.log(a);
+  }
+
+ ლოკალური სკოუპი (Function Scope):
+  ცვლადი ხელმისაწვდომია მხოლოდ ფუნქციის შიგნით.
+  მაგ:
+  function test() {
+    let b = 20;
+    console.log(b);
+  }
+  console.log(b);   b არ არსებობს ფუნქციის გარეთ
+
+ ბლოკური სკოუპი (Block Scope):
+  let და const ცვლადებს აქვთ ბლოკური სკოუპი – {}-ით შემოსაზღვრული არეალი.
+  მაგ:
+  if (true) {
+    let x = 5;
+    console.log(x);
+  }
+  console.log(x); ეს არ იმუშავებს
+-->
+ 
+
+
+
+<!--3-->
+
+<form id="customRegister">
+  <input type="text" id="username" placeholder="Username"><br>
+  <input type="email" id="useremail" placeholder="Email"><br>
+  <input type="password" id="userpassword" placeholder="Password"><br>
+  <input type="submit" value="Sign Up">
+</form>
+
+<script>
+  document.getElementById('customRegister').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    alert("Registration completed successfully.");
+  });
+</script>

@@ -1,0 +1,64 @@
+<!--1) კომენტარის სახით ახსენით რაში გამოიყნება addEventListener'ი 
+
+2) JS'ში შექმენით ცვლადი სადაც შეინახავთ თქვენთვის სასურველ რიცხვს 10'ის ფარგლებში ასევე შექმენით ერთი ცვლადი სადაც მომხმარებელს შემოატანინებთ რიცხვს შემდეგ HTML'ში შექმენით ერთი button რომელსაც წამოიღებთ JS'ში და დაადებთ მოვლენის მსმენელს ღილაკზე დაკლიკების დროს თუ მომხმარებლის რიცხვი დაემთხვევა თქვენს რიცხვს ალერტით გამოიტანეთ "შენ გამოიცანი ჩემი რიცხვი" თუ არა მაშინ "შენ ვერ გამოიცანი ჩემი რიცხვი"
+
+3) შექმენით სარეგისტრაცი ფორმა სადაც გექნებათ ემაილი, პაროლი, სახელი და submit ინფუთი შემდეგ როდესაც მომხმარებელი დააჭერს submit ღილაკს კონსოლში გამოიტანეთ "შენ წარმატებით გაიარე რეგისტრაცია და ასევე მისი მონაცემები რომელიც რეგისტრაციის დროს გამოიყენა"
+
+4) შექმენით ერთ დივი რომელსაც გაუწერთ თქვენთვის სასურველ სიმაღლეს და სიგანეს ასევე მისცემთ ფერსაც და border-radius'საც შემდეგ კი ამ div'ზე მოახდინეთ მოვლენის მსმენელი და როდესაც მასზე დაკლიკება მოხდება მისი ზომა გაიზარდოს ორჯერ და ასევე შეეცვალოს ფერი 
+
+5) ბევრი ივარჯიშეთ მოვლენის მსენელზე და გააკეთეთ მინიმუმ 5 მაგალითი თქვენთვის სასურვლე მოვლენაზე მაგ:"click"... თითოეულს კომენტარის სახით მიუწერეთ განმარტებაც-->
+
+
+<!--1-->
+<!--// addEventListener გამოიყენება იმისთვის, რომ HTML ელემენტს მივამაგროთ კონკრეტული მოვლენა (მაგ: click, mouseover, keydown და ა.შ.)
+// მისი დახმარებით შეგვიძლია ერთი და იგივე ელემენტზე დავამაგროთ რამდენიმეჯერ სხვადასხვა მოვლენა, ასევე დავაკონტროლოთ ქცევები.-->
+
+
+<!--2-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="userNumber" placeholder="Enter a number 1-10">
+    <button id="checkBtn">Guess</button>
+    <script>
+        let myNumber = 7;
+let userNumberInput = document.getElementById("userNumber");
+let button = document.getElementById("checkBtn");
+
+button.addEventListener("click", function() {
+    let userNumber = Number(userNumberInput.value);
+    if (userNumber === myNumber) {
+        alert("You guessed my number!");
+    } else {
+        alert("You did not guess my number.");
+    }
+});
+    </script>
+</body>
+</html>
+
+
+<!--3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <form id="registerForm">
+  <input type="text" id="name" placeholder="Name" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <input type="password" id="password" placeholder="Password" required>
+  <input type="submit" value="Register">
+</form>
+<script src="script.js"></script>
+</body>
+</html>
