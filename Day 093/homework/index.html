@@ -1,0 +1,79 @@
+<!--2) შეასრულეთ ქვემოთ მოცემული FrondEnd Mentor-ის პროექტი.
+
+https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+  <div class="w-full max-w-xl bg-white p-6 rounded-2xl shadow-md">
+    <h1 class="text-2xl font-bold mb-6 text-gray-800">Contact Us</h1>
+
+    <form id="contactForm" class="space-y-4">
+
+      <div>
+        <label class="block font-medium text-gray-700">First Name *</label>
+        <input type="text" id="firstName" class="w-full border rounded-lg px-3 py-2 mt-1 focus:ring-2 focus:ring-indigo-500 outline-none" required>
+        <p class="text-red-500 text-sm hidden" id="firstNameError">This field is required</p>
+      </div>
+
+
+      <div>
+        <label class="block font-medium text-gray-700">Last Name *</label>
+        <input type="text" id="lastName" class="w-full border rounded-lg px-3 py-2 mt-1 focus:ring-2 focus:ring-indigo-500 outline-none" required>
+        <p class="text-red-500 text-sm hidden" id="lastNameError">This field is required</p>
+      </div>
+
+
+      <div>
+        <label class="block font-medium text-gray-700">Email Address *</label>
+        <input type="email" id="email" class="w-full border rounded-lg px-3 py-2 mt-1 focus:ring-2 focus:ring-indigo-500 outline-none" required>
+        <p class="text-red-500 text-sm hidden" id="emailError">Please enter a valid email address</p>
+      </div>
+
+  
+      <div>
+        <label class="block font-medium text-gray-700">Query Type *</label>
+        <div class="grid grid-cols-2 gap-3 mt-2">
+          <label class="flex items-center border rounded-lg px-3 py-2 cursor-pointer">
+            <input type="radio" name="query" value="general" class="mr-2"> General Enquiry
+          </label>
+          <label class="flex items-center border rounded-lg px-3 py-2 cursor-pointer">
+            <input type="radio" name="query" value="support" class="mr-2"> Support Request
+          </label>
+        </div>
+        <p class="text-red-500 text-sm hidden" id="queryError">Please select a query type</p>
+      </div>
+
+
+      <div>
+        <label class="block font-medium text-gray-700">Message *</label>
+        <textarea id="message" rows="4" class="w-full border rounded-lg px-3 py-2 mt-1 focus:ring-2 focus:ring-indigo-500 outline-none" required></textarea>
+        <p class="text-red-500 text-sm hidden" id="messageError">This field is required</p>
+      </div>
+
+      <div class="flex items-center">
+        <input type="checkbox" id="consent" class="mr-2">
+        <label for="consent" class="text-gray-700">I consent to being contacted by the team *</label>
+      </div>
+      <p class="text-red-500 text-sm hidden" id="consentError">You must consent before submitting</p>
+
+      
+      <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
+        Submit
+      </button>
+    </form>
+
+  
+    <div id="successMessage" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+      ✅ Thanks for your message! We’ll be in touch soon.
+    </div>
+  </div>
+</body>
