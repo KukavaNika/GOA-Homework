@@ -1,0 +1,34 @@
+
+<!--Global Scope-->
+<!--- გლობალური სკოუპი (Global Scope):
+  ფაილის გარეთა ნაწილი. -->
+
+
+  <!--ფუნქციის სკოუპი (Function Scope):
+  ფუნქციის შიგნით მუშაოობს. ფუნქციის შიგნით const/let/var-ით 
+  მხოლოდ ამ ფუნქციაში (და მის შიდა ფუნქციებში), გარეთ არა.-->
+
+
+<!--ბლოკის სკოუპი (Block Scope):
+  ფიგურული ფრჩხილებით შემოსაზღვრული ბლოკი: { ... } if/for/while/try/catch და ა.შ.
+  const  და let ქმნიან ბლოკს სკოუპს-->
+
+
+<!--var- არგუმენთს თუ არ გადაცემ მათი  მნიშვნელობა თავიდან undefined-ია (ამიტომ ხშირად ბაგებს იწვევს).-->
+
+
+<script>
+   // 1)
+const name = "Mari";
+function greet() {
+  console.log(`Hello, ${name}!`);
+}
+
+//2
+function makeMessage() {
+  const message = "This is local to makeMessage()";
+  console.log("Inside makeMessage():", message);
+}
+
+
+</script>
